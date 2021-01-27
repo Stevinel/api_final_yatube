@@ -7,7 +7,7 @@
 
 Сериализация данных для всех моделей проекта (Post, Comment, Group, Follow)
 
-Обработку GET, POST, PATCH, PUT и DELETE запросов к базе данных проекта Yatube
+Обработка GET, POST, PATCH, PUT и DELETE запросов к базе данных проекта Yatube
 
 # Установка
 
@@ -29,3 +29,11 @@ python manage.py migrate
 python manage.py runserver
 
 #Примеры
+
+Для доступа к API необходимо получить токен: 
+Для этого создать POST-запрос localhost:8000/api/v1/token/ передав поля username и password. API вернет токен.
+
+Дальше, передав токен можно будет обращаться к методам, например: 
+
+/api/v1/posts/ (GET, POST, PUT, PATCH, DELETE)
+
