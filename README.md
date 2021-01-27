@@ -31,9 +31,12 @@ python manage.py runserver
 # Примеры
 
 Для доступа к API необходимо получить токен: 
-Для этого создать POST-запрос localhost:8000/api/v1/token/ передав поля username и password. API вернет токен.
+Нужно выполнить POST-запрос localhost:8000/api/v1/token/ передав поля username и password. API вернет JWT-токеню
 
 Дальше, передав токен можно будет обращаться к методам, например: 
 
 /api/v1/posts/ (GET, POST, PUT, PATCH, DELETE)
 
+При отправке запроса передавайте токен в заголовке Authorization: Bearer <токен>
+
+Слово Bearer здесь заменяет слово Token и означает, что за ним следует сам токен.
