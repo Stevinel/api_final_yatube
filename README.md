@@ -28,7 +28,7 @@ python manage.py migrate
 ## 5)Запустить сервер
 python manage.py runserver
 
-#Примеры
+# Примеры
 
 Для доступа к API необходимо получить токен: 
 Для этого создать POST-запрос localhost:8000/api/v1/token/ передав поля username и password. API вернет токен.
