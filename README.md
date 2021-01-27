@@ -11,19 +11,19 @@
 
 Склонировать репозиторий
 Создать и активировать виртуальное окружение для проекта
-...
+
 python -m venv venv
-...
+
 source venv/scripts/activate
-...
+
 Установить зависимости
 python pip install -r requirements.txt
-...
+
 Сделать миграции
 python manage.py makemigrations
 python manage.py migrate
-...
+
 Запустить сервер
 python manage.py runserver
-...
+
 #Примеры
