@@ -9,21 +9,21 @@
 
 # Установка
 
-Склонировать репозиторий
-Создать и активировать виртуальное окружение для проекта
+1)Склонировать репозиторий
+2)Создать и активировать виртуальное окружение для проекта
 
 python -m venv venv
 
 source venv/scripts/activate
 
-Установить зависимости
+3)Установить зависимости
 python pip install -r requirements.txt
 
-Сделать миграции
+4)Сделать миграции
 python manage.py makemigrations
 python manage.py migrate
 
-Запустить сервер
+5)Запустить сервер
 python manage.py runserver
 
 #Примеры
