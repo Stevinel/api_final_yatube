@@ -8,10 +8,12 @@ from rest_framework_simplejwt.views import (
 from .views import CommentViewSet, FollowViewSet, GroupViewSet, PostViewSet
 
 router = DefaultRouter()
-router.register(r"follow", FollowViewSet, basename="Follow")
-router.register(r"group", GroupViewSet, basename="Groups")
-router.register(r"posts", PostViewSet, basename="Posts")
-router.register(r"posts/(?P<post_id>\d+)/comments", CommentViewSet, basename="Comments")
+router.register("follow", FollowViewSet, basename="Follow")
+router.register("group", GroupViewSet, basename="Groups")
+router.register("posts", PostViewSet, basename="Posts")
+router.register(
+    r"posts/(?P<post_id>\d+)/comments", CommentViewSet, basename="Comments"
+)
 
 urlpatterns = [
     path("v1/", include(router.urls)),
